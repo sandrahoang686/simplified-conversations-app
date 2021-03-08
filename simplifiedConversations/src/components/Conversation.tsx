@@ -18,7 +18,7 @@ export const Conversation: FC<{}> = () => {
     const [convoId, setConvoId] = useState("");
     const [title, setTitle] = useState("");
     const [display, setDisplay] = useState(false);
-    const [test, setTest] = useState("");
+    const [name, setName] = useState("");
 
     useEffect(() => {
         grabConversations()
@@ -36,10 +36,10 @@ export const Conversation: FC<{}> = () => {
         setDisplay(true);
     }
 
-    const handleChange = (e: any) => setTest(e.target.value);
+    const handleChange = (e: any) => setName(e.target.value);
     
     const createNewConversation = async (e: any) => {
-        return await createConversation(test);
+        return await createConversation(name);
     };
 
     const displayConversations = () => {
@@ -64,7 +64,7 @@ export const Conversation: FC<{}> = () => {
             <form onSubmit={createNewConversation}>
                 <label>
                     New Conversation Name:
-                    <input type="text" name="conversationName" placeholder="Enter New Conversation Name Here" value={test} onChange={handleChange} />
+                    <input type="text" name="conversationName" placeholder="Enter New Conversation Name Here" value={name} onChange={handleChange} />
                 </label>
                 <input type="submit" value="Submit" />
             </form>
