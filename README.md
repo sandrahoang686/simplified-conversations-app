@@ -3,12 +3,13 @@
 ### An extremely stripped down conversations app
 
 ## Structure
-`api` directory is build with express
-`simplifiedConversations` directory is a react-app
+* `api` is built with Express
+* `simplifiedConversations` is a react-app
 
 ## Tech Stack and why I chose them
 * React - Easily reuse components
 * Typescript - Easy to type some of what the requirements were asking for and I like the documentation piece of TS
+* Nodejs
 * Express.js
 * Redis
 * Jest
