@@ -1,7 +1,7 @@
 # Simplified-Conversations API
 
 ## How to run locally:
-1. Please make sure you have Redis installed. Here is a quickstart guide [link](https://redis.io/topics/quickstart)
+1. Please make sure you have Redis installed and running with cmd `redis-server`. Here is a quickstart guide [link](https://redis.io/topics/quickstart)
 
 2. *OPTIONAL STEP* - you can view your Redis data by using `redis-commander`. Here is a quickstart guide [link](https://www.npmjs.com/package/redis-commander). This will likely run on `PORT 6379`
 
